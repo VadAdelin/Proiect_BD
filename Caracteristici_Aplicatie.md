@@ -32,5 +32,6 @@ Aceasta tabela retine astfel user_id si produs_id, si in plus data efectuarii tr
 
 **8)pc_budget_part:**
 **Aceasta functie va oferi utilizatorului un pc din piese in functie de bugetul ales si alte produse deja alese;**
+
 **9)get_best:**
 **Aceasta functie va gasi un produs in functie de buget si de preferinte specifice, fiind apelata de pc_budget si pc_budget_part;**
