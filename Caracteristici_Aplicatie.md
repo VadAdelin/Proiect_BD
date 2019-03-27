@@ -10,20 +10,20 @@ Aceasta tabela retine astfel user_id si produs_id, si in plus data efectuarii tr
 **In cadrul aplicatiei se vor putea crea conturi noi. Logarea se va face pe baza username-ului (format: nume_prenume) si a parolei pe care a o detine fiecare utilizator in parte.**
 
 
-**Functii folositoare:
-facturare:
-Aceasta functie va primi o lista de produse (cele din cosul de cumparaturi), le va sterge pe cele cumparate din sistem(sau va scadea din stocul disponibil), si va retine tranzactiile atomice;
-adaugare_produs:
-Aceasta functie va adauga un produs in functie de tipul sau, validand datele introduse;
-stergere_produs:
-Sterge un produs indiferent de stocul disponibil;
-inregistrare_utilizator:
-Aceasta functie va adauga un utilizator in sistem, validand datele introduse;
-sort_by:
-Aceasta functie va sorta elemntele unui tabel in functie de coloana aleasa;
-pc_budget:
-Aceasta functie va oferi utilizatorului un pc din piese in functie de bugetul ales si preferinte pentru fiecare piesa in parte;
-pc_budget_part:
-Aceasta functie va oferi utilizatorului un pc din piese in functie de bugetul ales si alte produse deja alese;
-get_best:
-Aceasta functie va gasi un produs in functie de buget si de preferinte specifice, fiind apelata de pc_budget si pc_budget_part;**
+**Functii folositoare:**
+**1)facturare:**
+**Aceasta functie va primi o lista de produse (cele din cosul de cumparaturi), le va sterge pe cele cumparate din sistem(sau va scadea din stocul disponibil), si va retine tranzactiile atomice;**
+**2)adaugare_produs:**
+**Aceasta functie va adauga un produs in functie de tipul sau, validand datele introduse;**
+**3)stergere_produs:**
+**Sterge un produs indiferent de stocul disponibil;**
+**4)inregistrare_utilizator:**
+**Aceasta functie va adauga un utilizator in sistem, validand datele introduse;**
+**5)sort_by:**
+**6)Aceasta functie va sorta elemntele unui tabel in functie de coloana aleasa;**
+**7)pc_budget:**
+**Aceasta functie va oferi utilizatorului un pc din piese in functie de bugetul ales si preferinte pentru fiecare piesa in parte;**
+**8)pc_budget_part:**
+**Aceasta functie va oferi utilizatorului un pc din piese in functie de bugetul ales si alte produse deja alese;**
+**9)get_best:**
+**Aceasta functie va gasi un produs in functie de buget si de preferinte specifice, fiind apelata de pc_budget si pc_budget_part;**
