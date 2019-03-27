@@ -11,18 +11,25 @@ Aceasta tabela retine astfel user_id si produs_id, si in plus data efectuarii tr
 
 
 **Functii folositoare:**
+
 **1)facturare:**
 **Aceasta functie va primi o lista de produse (cele din cosul de cumparaturi), le va sterge pe cele cumparate din sistem(sau va scadea din stocul disponibil), si va retine tranzactiile atomice;**
+
 **2)adaugare_produs:**
 **Aceasta functie va adauga un produs in functie de tipul sau, validand datele introduse;**
+
 **3)stergere_produs:**
 **Sterge un produs indiferent de stocul disponibil;**
+
 **4)inregistrare_utilizator:**
 **Aceasta functie va adauga un utilizator in sistem, validand datele introduse;**
+
 **5)sort_by:**
 **6)Aceasta functie va sorta elemntele unui tabel in functie de coloana aleasa;**
+
 **7)pc_budget:**
 **Aceasta functie va oferi utilizatorului un pc din piese in functie de bugetul ales si preferinte pentru fiecare piesa in parte;**
+
 **8)pc_budget_part:**
 **Aceasta functie va oferi utilizatorului un pc din piese in functie de bugetul ales si alte produse deja alese;**
 **9)get_best:**
