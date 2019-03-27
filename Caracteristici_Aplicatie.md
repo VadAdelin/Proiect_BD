@@ -39,3 +39,13 @@ Aceasta tabela retine astfel user_id si produs_id, si in plus data efectuarii tr
 
   **9)get_best:**
 >**Aceasta functie va gasi un produs in functie de buget si de preferinte specifice, fiind apelata de pc_budget si pc_budget_part;**
+
+ **10)show_bought:**
+ >**Programul va inregistra produsele cumparate si le va afisa intr-o zona de subsol (asemanator site-ului emeg in rubrica: Alti utilizatori au cumparat/vizitat si...);**
+ 
+  **11)rating_stats:**
+  >**Utilizatorului ii se va permite sa noteze achizitiile facute;**
+  
+  **12)popularity
+  >**Aplicatia va afisa pentru fiecare categorie cele mai cumparate produse;**
+ 
