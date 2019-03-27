@@ -389,6 +389,9 @@ insert into Tastaturi(id_produs,nume,tip,iluminare,tehnologie,pret,stoc)
 values (v_id,v_nume,v_tip,v_iluminare,v_tehnologie,v_pret,v_stocdisponibil);
 END LOOP;
 
+INSERT INTO Utilizatori values(8758,'adelin.vlad','bunica','adelin@yahoo.com','Adelin',0765647453,'20-JUL-1987','Galati','Galati',1);
+INSERT INTO Utilizatori values(9889,'bogdan.zaharia','bunicu','bogdan@yahoo.com','Bogdan',0797789691,'11-DEC-1967','Iasi','Iasi',1);
+
 END;
 /
 
