@@ -1,4 +1,4 @@
-  **Baza de date pe care vrem să o folosim se află în 2NF deoarece are tabele care sunt compuse din chei primare unice și alte tabele care conțin chei străine care provin de la tabelele cu cheile primare respective.**
+  **Baza de date pe care o vom folosi pentru proiect se afla in 2NF deoarece are tabele care sunt compuse din chei primare unice și alte tabele care conțin chei straine, chei care provin de la tabelele cu cheile primare respective.**
   
   
   
