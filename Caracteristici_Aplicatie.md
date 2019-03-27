@@ -26,5 +26,4 @@ Aceasta functie va oferi utilizatorului un pc din piese in functie de bugetul al
 pc_budget_part:
 Aceasta functie va oferi utilizatorului un pc din piese in functie de bugetul ales si alte produse deja alese;
 get_best:
-Aceasta functie va gasi un produs in functie de buget si de preferinte specifice, fiind apelata de pc_budget si pc_budget_part;
-**
+Aceasta functie va gasi un produs in functie de buget si de preferinte specifice, fiind apelata de pc_budget si pc_budget_part;**
