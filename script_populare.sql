@@ -27,23 +27,23 @@ username VARCHAR2(20) NOT NULL,
 parola VARCHAR2(20) NOT NULL,
 email VARCHAR2(30) NOT NULL,
 nume VARCHAR2(20) NOT NULL,
-phone_number NUMBER(10) NOT NULL,
+phone_number NUMBER(10),
 data_nastere DATE,
-judet VARCHAR2(20) NOT NULL,
-oras VARCHAR2(20) NOT NULL,
-admin_rights NUMBER(1)
+judet VARCHAR2(20),
+oras VARCHAR2(20),
+admin_rights NUMBER(1) NOT NULL
 )
 /
 
 CREATE TABLE PlaciVideo (
 id_produs VARCHAR2(100) NOT NULL PRIMARY KEY,
-nume VARCHAR2(100),
+nume VARCHAR2(100) NOT NULL,
 data_lansarii DATE NOT NULL,
 memorie VARCHAR(10) NOT NULL,
 tip_memorie VARCHAR(10) NOT NULL,
 frecventa VARCHAR(10) NOT NULL,
 pret INT NOT NULL,
-stoc NUMBER(3)
+stoc NUMBER(3) NOT NULL
 )
 /
 
@@ -55,7 +55,7 @@ frecventa VARCHAR(10) NOT NULL,
 arhitectura NUMBER(4) NOT NULL,
 nr_nuclee NUMBER(2) NOT NULL,
 pret NUMBER(5) NOT NULL,
-stoc NUMBER(3)
+stoc NUMBER(3) NOT NULL
 )
 /
 
@@ -65,8 +65,8 @@ tip_memorie VARCHAR2(4) NOT NULL,
 memorie NUMBER(2) NOT NULL,
 porturi_usb NUMBER(3) NOT NULL,
 pret NUMBER(5) NOT NULL,
-stoc NUMBER(3),
-nume VARCHAR2(40)
+stoc NUMBER(3) NOT NULL,
+nume VARCHAR2(40) NOT NULL
 )
 /
 
@@ -74,10 +74,10 @@ CREATE TABLE HardDiskuri (
 id_produs VARCHAR2(100) NOT NULL PRIMARY KEY,
 capacitate VARCHAR(10) NOT NULL,
 viteza_rotatii VARCHAR(10) NOT NULL,
-buffer VARCHAR(10),
+buffer VARCHAR(10) NOT NULL,
 pret NUMBER(5) NOT NULL,
-stoc NUMBER(3),
-nume VARCHAR2(40)
+stoc NUMBER(3) NOT NULL,
+nume VARCHAR2(40) NOT NULL
 )
 /
 
@@ -88,8 +88,8 @@ deschidere_laterala VARCHAR(2) NOT NULL,
 numar_sloturi NUMBER(1) NOT NULL,
 dimensiune_WxHxD VARCHAR(30),
 pret NUMBER(5) NOT NULL,
-stoc NUMBER(3),
-nume VARCHAR2(60)
+stoc NUMBER(3) NOT NULL,
+nume VARCHAR2(60) NOT NULL
 )
 /
 
@@ -99,8 +99,8 @@ putere_sursa VARCHAR(10) NOT NULL,
 ventilatoare NUMERIC(1) NOT NULL,
 alimentare VARCHAR(10) NOT NULL,
 pret NUMBER(5) NOT NULL,
-stoc NUMBER(3),
-nume VARCHAR2(40)
+stoc NUMBER(3) NOT NULL,
+nume VARCHAR2(40) NOT NULL
 )
 /
 
@@ -113,8 +113,8 @@ rezolutie_y NUMBER(6) NOT NULL,
 milioane_culori NUMBER(6) NOT NULL,
 conectivitate VARCHAR2(10),
 pret NUMBER(5) NOT NULL,
-stoc NUMBER(3),
-nume VARCHAR2(40)
+stoc NUMBER(3) NOT NULL,
+nume VARCHAR2(40) NOT NULL
 )
 /
 
@@ -124,8 +124,8 @@ tip VARCHAR(6) NOT NULL,
 iluminare VARCHAR(2) NOT NULL,
 tehnologie VARCHAR(8) NOT NULL,
 pret NUMBER(5) NOT NULL,
-stoc NUMBER(3),
-nume VARCHAR2(40)
+stoc NUMBER(3) NOT NULL,
+nume VARCHAR2(40) NOT NULL
 )
 /
 
@@ -135,16 +135,17 @@ tip VARCHAR(6) NOT NULL,
 rezolutie VARCHAR2(10) NOT NULL,
 tehnologie VARCHAR(8) NOT NULL,
 pret NUMBER(5) NOT NULL,
-stoc NUMBER(3),
-nume VARCHAR2(40)
+stoc NUMBER(3) NOT NULL,
+nume VARCHAR2(40) NOT NULL
 )
 /
 
 CREATE TABLE Tranzactie (
 id INT NOT NULL PRIMARY KEY,
-user_id INT NOT NULL,
+user_id INT FOREIGN NOT NULL,
+id_produs VARCHAR(20),
 valoare INT NOT NULL,
-data_efectuare DATE,
+data_efectuare DATE, 
 pret NUMBER(5) NOT NULL
 )
 /
@@ -389,10 +390,8 @@ insert into Tastaturi(id_produs,nume,tip,iluminare,tehnologie,pret,stoc)
 values (v_id,v_nume,v_tip,v_iluminare,v_tehnologie,v_pret,v_stocdisponibil);
 END LOOP;
 
-INSERT INTO Utilizatori values(8758,'adelin.vlad','bunica','adelin@yahoo.com','Adelin',0765647453,'20-JUL-1987','Galati','Galati',1);
-INSERT INTO Utilizatori values(9889,'bogdan.zaharia','bunicu','bogdan@yahoo.com','Bogdan',0797789691,'11-DEC-1967','Iasi','Iasi',1);
-
 END;
 /
-
-                                          **TO BE CONTINUED**
+                    **TO BE CONTINUED**
+                                          
+                                          
