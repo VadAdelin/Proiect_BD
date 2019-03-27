@@ -46,6 +46,6 @@ Aceasta tabela retine astfel user_id si produs_id, si in plus data efectuarii tr
   **11)rating_stats:**
   >**Utilizatorului ii se va permite sa noteze achizitiile facute;**
   
-  **12)popularity
+  **12)popularity**
   >**Aplicatia va afisa pentru fiecare categorie cele mai cumparate produse;**
  
