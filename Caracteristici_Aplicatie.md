@@ -9,8 +9,8 @@ Aceasta tabela retine astfel user_id si produs_id, si in plus data efectuarii tr
 
 **In cadrul aplicatiei se vor putea crea conturi noi. Logarea se va face pe baza username-ului (format: nume_prenume) si a parolei pe care a o detine fiecare utilizator in parte.**
 
-**
-Functii folositoare:
+
+**Functii folositoare:
 facturare:
 Aceasta functie va primi o lista de produse (cele din cosul de cumparaturi), le va sterge pe cele cumparate din sistem(sau va scadea din stocul disponibil), si va retine tranzactiile atomice;
 adaugare_produs:
